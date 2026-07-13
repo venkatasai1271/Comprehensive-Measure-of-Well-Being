@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>HDI Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="result">
+
+
+<h1>Human Development Index Prediction</h1>
+
+<br>
+
+
+<form action="/predict" method="POST">
+
+
+<h3>Life expectancy</h3>
+
+<input type="number"
+       step="any"
+       name="Life expectancy"
+       placeholder="Enter Life expectancy"
+       required>
+
+
+<br><br>
+
+
+
+<h3>Mean years of schooling</h3>
+
+<input type="number"
+       step="any"
+       name="Mean years of schooling"
+       placeholder="Enter Mean years of schooling"
+       required>
+
+
+<br><br>
+
+
+
+<h3>Gross national income (GNI) per capita</h3>
+
+<input type="number"
+       step="any"
+       name="Gross national income (GNI) per capita"
+       placeholder="Enter GNI per capita"
+       required>
+
+
+<br><br>
+
+
+
+<h3>Internet users</h3>
+
+<input type="number"
+       step="any"
+       name="Internet users"
+       placeholder="Enter Internet users percentage"
+       required>
+
+
+<br><br><br>
+
+
+<button type="submit">
+    Predict HDI
+</button>
+
+
+</form>
+
+
+<br>
+
+
+<a href="/Home">
+    Home
+</a>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -5,152 +5,384 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
 body{
+
     background:url("../images/bg.jpg");
+
     background-size:cover;
+
     background-position:center;
+
     background-repeat:no-repeat;
-    height:100vh;
+
+    min-height:100vh;
+
 }
 
-/* Home Page */
+
+/* =========================
+      HOME PAGE
+========================= */
+
 
 .home{
+
     text-align:center;
+
     padding-top:40px;
+
 }
+
 
 .home h1{
+
     color:red;
+
     font-size:60px;
+
     font-weight:bold;
+
 }
+
 
 .home p{
+
     color:white;
+
     width:80%;
+
     margin:auto;
+
     margin-top:30px;
+
     font-size:22px;
+
     line-height:35px;
-    background:rgba(0,0,0,0.4);
-    padding:20px;
-    border-radius:10px;
+
+    background:rgba(0,0,0,0.5);
+
+    padding:25px;
+
+    border-radius:15px;
+
 }
+
+
 
 .home a{
+
     display:inline-block;
+
     margin-top:40px;
+
     text-decoration:none;
+
     color:white;
+
     background:#2979ff;
+
     padding:15px 45px;
+
     font-size:24px;
+
     border-radius:10px;
+
 }
+
+
 
 .home a:hover{
+
     background:red;
+
 }
 
-/* Prediction Page */
+
+
+/* =========================
+      PREDICTION PAGE
+========================= */
+
 
 .container{
+
     width:600px;
+
     margin:auto;
-    margin-top:30px;
-    background:rgba(0,0,0,0.6);
+
+    margin-top:40px;
+
+    background:rgba(0,0,0,0.65);
+
     border-radius:30px;
-    padding:30px;
+
+    padding:40px;
+
     text-align:center;
+
 }
+
+
 
 .container h1{
+
     color:red;
-    font-size:50px;
-    margin-bottom:25px;
+
+    font-size:45px;
+
+    margin-bottom:30px;
+
 }
 
-input,select{
-    width:350px;
-    padding:14px;
-    margin-top:15px;
-    border-radius:25px;
-    border:2px solid #33b5ff;
-    background:transparent;
+
+
+.container h3{
+
     color:white;
-    text-align:center;
-    font-size:17px;
+
+    font-size:22px;
+
+    margin-top:15px;
+
 }
+
+
+
+input{
+
+    width:350px;
+
+    padding:14px;
+
+    margin-top:10px;
+
+    border-radius:25px;
+
+    border:2px solid #33b5ff;
+
+    background:transparent;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:17px;
+
+}
+
+
 
 input::placeholder{
+
     color:white;
+
+    opacity:1;
+
 }
 
-select{
-    color:white;
+
+
+input:focus{
+
+    outline:none;
+
+    border-color:red;
+
 }
 
-option{
-    color:black;
-}
+
 
 button{
+
     width:220px;
+
     margin-top:25px;
+
     padding:14px;
+
     border:none;
+
     border-radius:30px;
+
     background:linear-gradient(to right,#4facfe,#b44cff);
+
     color:white;
+
     font-size:24px;
+
     cursor:pointer;
+
 }
+
+
 
 button:hover{
+
     transform:scale(1.05);
+
+    background:red;
+
 }
 
-/* Result Page */
+
+
+/* =========================
+      RESULT PAGE
+========================= */
+
 
 .result{
+
+
     width:750px;
+
+
     margin:auto;
+
+
     margin-top:80px;
+
+
     background:rgba(0,0,0,0.75);
+
+
     border-radius:20px;
+
+
     text-align:center;
+
+
     padding:40px;
+
+
 }
+
+
 
 .result h1{
+
+
     color:red;
+
+
     font-size:50px;
+
+
 }
+
+
 
 .result h2{
+
+
     color:yellow;
+
+
     margin-top:25px;
+
+
     font-size:38px;
+
+
 }
+
+
 
 .result h3{
+
+
     color:white;
+
+
     margin-top:20px;
+
+
     font-size:28px;
+
+
 }
+
+
 
 .result a{
+
+
     display:inline-block;
+
+
     margin:20px;
+
+
     text-decoration:none;
+
+
     color:white;
+
+
     background:#2979ff;
+
+
     padding:12px 30px;
+
+
     border-radius:10px;
+
+
     font-size:20px;
+
+
 }
 
+
+
 .result a:hover{
+
+
     background:red;
+
+
+}
+
+
+
+/* =========================
+      MOBILE VIEW
+========================= */
+
+
+@media(max-width:700px){
+
+
+    .container,
+    .result{
+
+        width:90%;
+
+    }
+
+
+    .home h1{
+
+        font-size:40px;
+
+    }
+
+
+    .home p{
+
+        width:90%;
+
+        font-size:18px;
+
+    }
+
+
+    input{
+
+        width:90%;
+
+    }
+
+
 }
